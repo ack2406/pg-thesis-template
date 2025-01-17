@@ -1,4 +1,4 @@
-# PG Diploma Thesis Template
+# PG Diploma Thesis Latex Template
 
 This repository provides a LaTeX template for diploma theses at the Gdańsk University of Technology. The template is designed to comply with the guidelines specified in [Zarządzenie Rektora PG nr 45/2024](https://cdn.files.pg.edu.pl/main/DZJ/Jako%C5%9B%C4%87%20kszta%C5%82cenia/akty%20prawne/Zarz%C4%85dzenia/2024%202025/ZR%2045-2024%20w%20sprawie%20wprowadzenia%20wytycznych%20dla%20autor%C3%B3w%20prac%20dyplomowych.pdf).
 
