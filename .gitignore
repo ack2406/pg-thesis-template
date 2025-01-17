@@ -1,0 +1,36 @@
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.nav
+*.snm
+*.synctex.gz
+*.bbl
+*.blg
+*.run.xml
+
+# Editor backup files
+*~
+*.swp
+*.bak
+*.backup
+*.tmp
+*.temp
+
+# PDF and output files
+*.pdf
+!titlepage.pdf
+*.zip
+
+# Hidden system files
+.DS_Store
+Thumbs.db
+
+# Generated directories
+_build/
+out/
