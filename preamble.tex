@@ -1,0 +1,81 @@
+% Set up main font using Arial (requires LuaLaTeX or XeLaTeX)
+\usepackage{fontspec}
+\setmainfont{Arial}
+
+% Ensure the first paragraph in each section or chapter is indented
+\usepackage{indentfirst}
+
+% Set Polish as the main language and English as a secondary language
+\usepackage{polyglossia}
+\setdefaultlanguage{polish}
+\setotherlanguage{english}
+
+% Page geometry settings
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    top=2.5cm,
+    bottom=2.5cm,
+    inner=3.5cm,
+    outer=2.5cm
+}
+
+% Line spacing
+\usepackage{setspace}
+\setstretch{1.5}
+
+% Custom headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyfoot[C]{\thepage}
+}
+\renewcommand{\headrulewidth}{0pt}
+
+% Paragraph formatting: indentation and spacing
+\usepackage{parskip}
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+\raggedbottom
+
+% Define custom colors according to the University's guidelines
+\usepackage{xcolor}
+\definecolor{pantone540}{HTML}{002B5C}
+\definecolor{pantoneGray}{HTML}{75787B}
+\definecolor{pantone1797}{HTML}{C8102E}
+
+% Enable graphics support and define image path
+\usepackage{graphicx}
+\graphicspath{{assets/images/}}
+
+% Configure captions for tables and figures
+\usepackage{caption}
+\captionsetup[table]{position=above}
+\captionsetup[figure]{position=below}
+
+% Enable PDF inclusion for the title page
+\usepackage{pdfpages}
+
+% Customize section and chapter titles
+\usepackage{titlesec}
+
+\titleformat{\chapter}[hang]{\bfseries\Large\MakeUppercase}{\thechapter.}{1em}{}{}
+\titlespacing*{\chapter}{0pt}{*3}{*2}
+
+\titleformat{\section}[hang]{\bfseries\itshape\large}{\thesection}{1em}{}{}
+\titlespacing*{\section}{0pt}{*2}{*1.5}
+
+\titleformat{\subsection}[hang]{\itshape\normalsize}{\thesubsection}{1em}{}{}
+\titlespacing*{\subsection}{0pt}{*1.5}{*1}
+
+% Bibliography configuration (Biber backend with ISO-numeric style)
+\usepackage[backend=biber,style=iso-numeric]{biblatex}
+\addbibresource{bibliography.bib}
+
+% Polish-specific strings for bibliography
+\DefineBibliographyStrings{polish}{
+    bibliography = {Wykaz literatury}
+}
